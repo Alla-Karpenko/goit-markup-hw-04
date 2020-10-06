@@ -51,7 +51,12 @@
   
   
   .hero {
-    background: #2F303A;;
+    background: #2F303A;
+    background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../img/bg.jpg");
   }
   .hero-title {
     padding-top: 200px;
@@ -157,6 +162,7 @@
     letter-spacing: 0.02em;
     color: var(--subtitle-color);
   }
+  .
   .navigation-list-link:hover,
   .navigation-list-link:focus {
     color: var(--accent-color);
@@ -167,7 +173,8 @@
   }
   
   .header-mail-link:hover,
-  .header-mail-link:focus {
+  .header-mail-link:focus,
+  .mail-svg {
     color: var(--accent-color);
   }
   
@@ -261,7 +268,7 @@
   }
   .position {
    margin-top: 10px;
-   padding-bottom: 30px;
+   margin-bottom: 16px;
   }
 
   .team-card {
@@ -311,7 +318,29 @@
     letter-spacing: 0.03em;
     color: var(--subtitle-color);
   }
-  
+  .social-list-link:hover {
+    background-color: var(--accent-color);
+  }
+  .social-list-link:hover .social-list-svg {
+    fill: #FFFFFF;
+  }
+  .social-list-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+
+  }
+  .social-list {
+    display: flex;
+    justify-content: space-between;
+  }
+  .social-list-svg {
+    width: 20px;
+    height: 20px;
+  }
   /*======== END COMAND  ======*/
 
   /*======   FOOTER  ========*/
@@ -319,7 +348,7 @@
   .contact-address {
     margin-bottom: 9px;
   }
-  .contact-email {
+  .contact-mail {
     margin-bottom: 9px;
   }
   .footer{
